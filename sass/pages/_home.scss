@@ -11,19 +11,5 @@
     @include flex(column, center, center);
     padding: 4rem;
     border-radius: 1rem;
-    animation: tofro 4s ease-in-out infinite alternate;
-    h2 {
-      background: linear-gradient(
-        -45deg,
-        $color-primary 0% 50%,
-        $color-black 50% 100%
-      );
-      color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-    }
-    img {
-      animation: rotate360 5s ease-in-out infinite;
-    }
   }
 }
