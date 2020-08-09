@@ -1,0 +1,104 @@
+.section-form {
+  height: 100vh;
+
+  margin: auto;
+  @include flex(row, center, center);
+  background-image: linear-gradient(45deg, $color-primary 0%, #fffb7d 100%);
+  color: $color-white;
+  .validator {
+    background: $color-grey-dark-1;
+    @include flex(row, space-around, center);
+    flex-wrap: wrap;
+    padding: 4rem 6rem;
+    border-radius: 1rem;
+    width: 80%;
+  }
+}
+
+.form {
+  flex: 1 0.5 30%;
+
+  .heading {
+    margin-bottom: 2rem;
+
+    p {
+      font-size: 1.5rem;
+      padding: 1rem;
+      span {
+        color: $color-primary;
+        cursor: pointer;
+      }
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-control {
+    margin-bottom: 4rem;
+    width: 100%;
+    position: relative;
+
+    input {
+      width: 80%;
+      background: #2f2f2f;
+      display: block;
+      border: 2px solid #2f2f2f;
+      border-radius: 1rem;
+      padding: 1rem 2rem;
+      font-size: 1.8rem;
+      color: #fff;
+      &:focus {
+        background: $color-primary;
+        color: $color-grey-dark-1;
+        outline: 0;
+      }
+    }
+    small {
+      font-size: 1.2rem;
+      position: absolute;
+      top: 1rem;
+      left: 0;
+      visibility: hidden;
+      z-index: -1;
+      margin: 1rem 0 0 2rem;
+      transition: all 0.3s ease-in;
+    }
+  }
+}
+
+.form-control.success input {
+  border-color: $color-primary;
+}
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.error small {
+  visibility: visible;
+  top: 4rem;
+  z-index: 0;
+}
+
+.passMessage {
+  @include flex(row, flex-start, center);
+  display: none;
+  p {
+    font-size: 1.5rem;
+  }
+  *:not(:last-child) {
+    margin-right: 2rem;
+  }
+  &__invalid {
+    color: #e74c3c;
+  }
+  &__valid {
+    color: green;
+  }
+}
+
+.validator-signup {
+  flex: 1 1 30%;
+  @include flex(row, center, center);
+  img {
+    width: 80%;
+  }
+}

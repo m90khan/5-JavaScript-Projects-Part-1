@@ -25,10 +25,62 @@
   <body class="opening">
     <div class="section-form">
       <div class="validator">
-        <form action="" class="validator-form"></form>
-        <img src="/img/favicon.png" alt="" />
-        <h2>The Website Kitchen</h2>
-        <p>Starter Files</p>
+        <form action="" class="form">
+          <div class="heading">
+            <h4>Create an Account</h4>
+            <p>Already an user? <span>Sign in</span></p>
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              class="form-control__username"
+              placeholder="Username"
+              id="username"
+            />
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              class="form-control__email"
+              placeholder="Email"
+              id="email"
+            />
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <input
+              type="password"
+              class="form-control__password"
+              placeholder="Password"
+              id="password"
+            />
+
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <input
+              type="password"
+              class="form-control__confirm"
+              placeholder="Confirm Password"
+              id="confirmPass"
+            />
+            <small>Error Message</small>
+          </div>
+          <div class="passMessage">
+            <p id="letter" class="passMessage__invalid"><b> abc</b></p>
+            <p id="capital" class="passMessage__invalid">
+              <b> ABC</b>
+            </p>
+            <p id="number" class="passMessage__invalid"><b> 1-9</b></p>
+            <p id="length" class="passMessage__invalid"><b>>8</b></p>
+          </div>
+          <button class="btn btn--primary">Submit</button>
+        </form>
+
+        <div class="validator-signup">
+          <img src="./img/sign-up-image.svg" alt="" />
+        </div>
       </div>
     </div>
     <script src="./js/formValidator.js"></script>
