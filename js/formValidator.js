@@ -60,7 +60,7 @@ form.addEventListener("submit", (e) => {
   checkPasswordMatch(password, confirmPass);
 });
 
-// ! check Reuired Fields
+// ! check Required Fields
 // * check if empty or not
 function checkRequired(arrInputs) {
   arrInputs.forEach((input) => {

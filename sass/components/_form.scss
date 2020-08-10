@@ -12,6 +12,7 @@
     padding: 4rem 6rem;
     border-radius: 1rem;
     width: 80%;
+    position: relative;
   }
 }
 
@@ -46,6 +47,10 @@
       padding: 1rem 2rem;
       font-size: 1.8rem;
       color: #fff;
+
+      @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+      }
       &:focus {
         background: $color-primary;
         color: $color-grey-dark-1;
@@ -91,14 +96,41 @@
     color: #e74c3c;
   }
   &__valid {
-    color: green;
+    color: $color-primary;
   }
 }
 
 .validator-signup {
   flex: 1 1 30%;
-  @include flex(row, center, center);
+  @include flex(column, space-evenly, center);
+
   img {
-    width: 80%;
+    width: 60%;
+  }
+
+  .social {
+    @include flex(column, space-evenly, center);
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    &-icons {
+      @include flex(row, space-around, center);
+
+      img {
+        padding: 1rem;
+        background: #2f2f2f;
+        border-radius: 10rem;
+        cursor: pointer;
+        width: 70%;
+        &:hover {
+          background: #1f2f2f;
+        }
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+    }
   }
 }

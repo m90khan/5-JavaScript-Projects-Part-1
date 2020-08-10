@@ -46,7 +46,9 @@
   //   btn--primary
   &--primary {
     width: 80%;
-
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
     background-color: $color-primary;
     color: $color-grey-dark-1;
     &::after {
@@ -106,5 +108,52 @@
     transform: translateX(-100%);
     background: $color-primary;
     z-index: -1;
+  }
+}
+
+.btn-close {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 1rem 1.2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    color: #2f2f2f;
+    background: $color-primary;
+    &::after {
+      color: #2f2f2f;
+    }
+  }
+
+  &::after {
+    content: "X";
+    color: $color-primary;
+    z-index: 100;
+  }
+  &--modal {
+    background: #2f2f2f;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    @media only screen and (max-width: $bp-medium) {
+      top: 2rem;
+      right: 2rem;
+    }
   }
 }

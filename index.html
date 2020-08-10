@@ -20,9 +20,118 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-    <title>Start FIles | Project</title>
+    <title>JavaScript Projects | Part 1</title>
   </head>
   <body class="opening">
+    <div class="section-portfolio">
+      <div class="portfolio">
+        <img src="./img/movieTickets.JPG" alt="" />
+        <img src="./img/signupForm.JPG" alt="" />
+      </div>
+      <!-- <div class="social-icons">
+        <a href="#"><img src="./img/svg/google.svg" alt="google login" /></a>
+
+        <a href="#"> <img src="./img/svg/twitter.svg" alt="twitter login" /></a>
+      </div> -->
+    </div>
+
+    <div class="section-movie">
+      <div class="movie">
+        <h2>Movie Seat Selection</h2>
+        <div class="movie-box">
+          <h4 class="movie-box__title">Pick a Movie:</h4>
+          <select name="" id="movie" class="movie-box__options">
+            <option value="20">Joker ($20)</option>
+            <option value="15">Mission Impossible ($15)</option>
+            <option value="10">GodFather ($10)</option>
+            <option value="12">Raging Bull ($12)</option>
+          </select>
+        </div>
+        <ul class="movie-showcase">
+          <li>
+            <div class="movie-showcase__seat"></div>
+            <small>N/A</small>
+          </li>
+          <li>
+            <div class="movie-showcase__seat selected"></div>
+            <small>Selected</small>
+          </li>
+          <li>
+            <div class="movie-showcase__seat occupied"></div>
+            <small>Occupied</small>
+          </li>
+        </ul>
+
+        <div class="movie-container">
+          <div class="screen"></div>
+
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat selected"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+          </div>
+        </div>
+        <p class="movie-text">
+          You have selected <span id="count">0</span> seats for a price of $
+          <span id="total">0</span>
+        </p>
+      </div>
+    </div>
     <div class="section-form">
       <div class="validator">
         <form action="" class="form">
@@ -79,10 +188,30 @@
         </form>
 
         <div class="validator-signup">
-          <img src="./img/sign-up-image.svg" alt="" />
+          <img src="./img/sign-up-image.svg" alt="signup image" />
+          <div class="social">
+            <p>Or Sign Up with</p>
+            <div class="social-icons">
+              <a href="#"
+                ><img src="./img/svg/google.svg" alt="google login"
+              /></a>
+              <a href="#">
+                <img src="./img/svg/Icon.svg" alt="facebook login"
+              /></a>
+              <a href="#">
+                <img src="./img/svg/linkedin.svg" alt="linkedin login"
+              /></a>
+              <a href="#">
+                <img src="./img/svg/twitter.svg" alt="twitter login"
+              /></a>
+            </div>
+          </div>
         </div>
+        <button class="btn-close btn-close--modal"></button>
       </div>
     </div>
+
     <script src="./js/formValidator.js"></script>
+    <script src="./js/movieSeat.js"></script>
   </body>
 </html>
