@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campsel - Let the journey begins</title>
+    <meta
+      name="keywords"
+      content="Travel planning, travel bundles, travel escapes, affordable travel"
+    />
+    <meta
+      name="description"
+      content="Stressed? No Problem. You relief is One trip away. We create soul restoring journeys that inspire you to be you."
+    />
+    <link rel="icon" href="./assets/images/svg/bonfire.svg" />
+  </head>
+  <body class="opening">
+    <div class="section-portfolio">
+      <div class="portfolio">
+        <img src="./img/movieTickets.JPG" alt="" />
+        <img src="./img/signupForm.JPG" alt="" />
+      </div>
+      <!-- <div class="social-icons">
+        <a href="#"><img src="./img/svg/google.svg" alt="google login" /></a>
+
+        <a href="#"> <img src="./img/svg/twitter.svg" alt="twitter login" /></a>
+      </div> -->
+    </div>
+
+    <div class="section-movie">
+      <div class="movie">
+        <h2>Movie Seat Selection</h2>
+        <div class="movie-box">
+          <h4 class="movie-box__title">Pick a Movie:</h4>
+          <select name="" id="movie" class="movie-box__options">
+            <option value="20">Joker ($20)</option>
+            <option value="15">Mission Impossible ($15)</option>
+            <option value="10">GodFather ($10)</option>
+            <option value="12">Raging Bull ($12)</option>
+          </select>
+        </div>
+        <ul class="movie-showcase">
+          <li>
+            <div class="movie-showcase__seat"></div>
+            <small>N/A</small>
+          </li>
+          <li>
+            <div class="movie-showcase__seat selected"></div>
+            <small>Selected</small>
+          </li>
+          <li>
+            <div class="movie-showcase__seat occupied"></div>
+            <small>Occupied</small>
+          </li>
+        </ul>
+
+        <div class="movie-container">
+          <div class="screen"></div>
+
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat selected"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+          </div>
+        </div>
+        <p class="movie-text">
+          You have selected <span id="count">0</span> seats for a price of $
+          <span id="total">0</span>
+        </p>
+      </div>
+    </div>
+    <div class="section-form">
+      <div class="validator">
+        <form action="" class="form">
+          <div class="heading">
+            <h4>Create an Account</h4>
+            <p>Already an user? <span>Sign in</span></p>
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              class="form-control__username"
+              placeholder="Username"
+              id="username"
+            />
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              class="form-control__email"
+              placeholder="Email"
+              id="email"
+            />
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <input
+              type="password"
+              class="form-control__password"
+              placeholder="Password"
+              id="password"
+            />
+
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <input
+              type="password"
+              class="form-control__confirm"
+              placeholder="Confirm Password"
+              id="confirmPass"
+            />
+            <small>Error Message</small>
+          </div>
+          <div class="passMessage">
+            <p id="letter" class="passMessage__invalid"><b> abc</b></p>
+            <p id="capital" class="passMessage__invalid">
+              <b> ABC</b>
+            </p>
+            <p id="number" class="passMessage__invalid"><b> 1-9</b></p>
+            <p id="length" class="passMessage__invalid"><b>>8</b></p>
+          </div>
+          <button class="btn btn--primary">Submit</button>
+        </form>
+
+        <div class="validator-signup">
+          <img src="./img/sign-up-image.svg" alt="signup image" />
+          <div class="social">
+            <p>Or Sign Up with</p>
+            <div class="social-icons">
+              <a href="#"
+                ><img src="./img/svg/google.svg" alt="google login"
+              /></a>
+              <a href="#">
+                <img src="./img/svg/Icon.svg" alt="facebook login"
+              /></a>
+              <a href="#">
+                <img src="./img/svg/linkedin.svg" alt="linkedin login"
+              /></a>
+              <a href="#">
+                <img src="./img/svg/twitter.svg" alt="twitter login"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <button class="btn-close btn-close--modal"></button>
+      </div>
+    </div>
+  </body>
+</html>
