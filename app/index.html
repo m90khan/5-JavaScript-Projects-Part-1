@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Campsel - Let the journey begins</title>
+    <title>JavaScript Projects - Part 1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
     <meta
       name="keywords"
       content="Travel planning, travel bundles, travel escapes, affordable travel"
@@ -17,8 +21,9 @@
   <body class="opening">
     <div class="section-portfolio">
       <div class="portfolio">
-        <img src="./img/movieTickets.JPG" alt="" />
-        <img src="./img/signupForm.JPG" alt="" />
+        <img src="./assets/images/img/movieTickets.JPG" alt="" />
+        <img src="./assets/images/img/signupForm.JPG" alt="" />
+        <img src="./assets/images/img/githubProfileSearch.JPG" alt="" />
       </div>
       <!-- <div class="social-icons">
         <a href="#"><img src="./img/svg/google.svg" alt="google login" /></a>
@@ -180,26 +185,78 @@
         </form>
 
         <div class="validator-signup">
-          <img src="./img/sign-up-image.svg" alt="signup image" />
+          <img src="./assets/images/img/sign-up-image.svg" alt="signup image" />
           <div class="social">
             <p>Or Sign Up with</p>
             <div class="social-icons">
               <a href="#"
-                ><img src="./img/svg/google.svg" alt="google login"
+                ><img src="./assets/images/icons/SVG/twitter.svg" alt="google login"
               /></a>
               <a href="#">
-                <img src="./img/svg/Icon.svg" alt="facebook login"
+                <img src="./assets/images/icons/SVG/facebook.svg" alt="facebook login"
               /></a>
               <a href="#">
-                <img src="./img/svg/linkedin.svg" alt="linkedin login"
+                <img src="./assets/images/icons/SVG/instagram.svg" alt="linkedin login"
               /></a>
               <a href="#">
-                <img src="./img/svg/twitter.svg" alt="twitter login"
+                <img src="./assets/images/icons/SVG/youtube.svg" alt="twitter login"
               /></a>
             </div>
           </div>
         </div>
         <button class="btn-close btn-close--modal"></button>
+      </div>
+    </div>
+
+    <div class="section-github">
+      <div class="github">
+        <form action="" class="github-form">
+          <div class="github-form-heading">
+            <h1>Search Github Users</h1>
+            <p>Enter the username to get the<span> user profile</span> from Github</p>
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              class="form-control__username github-user"
+              placeholder="Username"
+              id="github-user"
+            />
+          </div>
+          <div class="git"></div>
+          <!-- <button class="btn btn--primary">Submit</button> -->
+        </form>
+        <div class="profile">
+          <h1>Latest Repos</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timer clock -->
+    <div class="section-timer">
+      <div class="timer">
+        <h1 class="u-tc">Timer Animated Clock</h1>
+        <div class="timer-set">
+          <div class="controls">
+            <input id="duration-timer" value="3" />
+            <div>
+              <button id="start-timer"><i class="fas fa-play"></i></button>
+              <button id="pause-timer"><i class="fas fa-pause"></i></button>
+              <button id="pause-timer"><i class="fas fa-stop"></i></button>
+            </div>
+          </div>
+          <svg class="dial">
+            <circle
+              fill="transparent"
+              stroke="#ff3cac"
+              stroke-width="20"
+              r="190"
+              cx="0"
+              cy="200"
+              transform="rotate(-90 100 100)"
+            />
+          </svg>
+        </div>
       </div>
     </div>
   </body>

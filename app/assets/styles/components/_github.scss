@@ -1,0 +1,109 @@
+.section-github {
+  min-height: 100vh;
+  @include flex(row, center, center);
+  padding: 4rem 0;
+  background-color: #ff9a8b;
+  background-image: linear-gradient(90deg, #ff9a8b 0%, #ff6a88 55%, #ff99ac 100%);
+
+  .github {
+    background: $color-grey-dark-1;
+
+    @include flex(row, space-evenly, center);
+    flex-wrap: wrap;
+    padding: 4rem 6rem;
+    border-radius: 1rem;
+    width: 80%;
+    color: #fff;
+    position: relative;
+    // h1 {
+    //   background: linear-gradient(90deg, #ff9a8b 0%, #ff6a88 55%, #ff99ac 100%);
+    //   -webkit-background-clip: text;
+    //   display: inline-block;
+    //   color: transparent;
+    // }
+
+    &-form {
+      width: 80%;
+      input {
+        width: 100%;
+      }
+      .git {
+        @include flex(row, space-between, center);
+        &-profile {
+          @include flex(column, space-between, center);
+          flex: 0 0 30%;
+          img {
+            width: 60%;
+            height: 0%;
+            border-radius: 5rem;
+            margin-bottom: 1rem;
+          }
+        }
+        &-details {
+          flex: 0 0 60%;
+
+          &__text {
+            ul {
+              border-radius: 1rem;
+
+              li {
+                font-size: 1.8rem;
+                padding: 1rem;
+                border: 0.5px solid rgba(255, 255, 255, 0.692);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Github Profile
+.profile {
+  width: 80%;
+  & > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  h1 {
+    color: #fff;
+  }
+}
+.repo {
+  @include flex(row, space-between, center);
+  padding: 0.5rem 1rem;
+  border: 0.5px solid rgba(255, 255, 255, 0.692);
+  a {
+    margin-right: auto;
+  }
+  &-title {
+    color: #fff;
+  }
+  &-details {
+    @include flex(row, flex-start, center);
+
+    & > *:not(:last-child) {
+      margin-right: 1rem;
+    }
+    &__badge {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      &--1 {
+        background: #b15445;
+      }
+      &--2 {
+        background: #da796a;
+      }
+      &--3 {
+        background: #df7f71;
+      }
+      &--4 {
+        background: #f89586;
+      }
+    }
+  }
+
+  &-error {
+    // display: none;
+  }
+}
