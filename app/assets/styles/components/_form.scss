@@ -52,9 +52,9 @@
         width: 100%;
       }
       &:focus {
-        background: $color-primary;
-        color: $color-grey-dark-1;
-        outline: 0;
+        background: #222020;
+        color: $color-white;
+        outline: none;
       }
     }
     small {

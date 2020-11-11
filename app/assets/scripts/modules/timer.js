@@ -7,18 +7,17 @@ update the text on coundown
 reset border if timer  =0 
 reset timer
 */
-const durationInput = document.querySelector('#duration-timer');
-const startButton = document.querySelector('#start-timer');
-const pauseButton = document.querySelector('#pause-timer');
 
 class Timer {
-  constructor(durationInput, startButton, pauseButton, callbacks) {
+  constructor(durationInput, startButton, pauseButton, stopButton, callbacks) {
     this.durationInput = durationInput;
     this.startButton = startButton;
     this.pauseButton = pauseButton;
+    this.stopButton = stopButton;
     this.duration;
-    this.circle = document.querySelector('circle');
+    this.circle = document.querySelector('.dial circle');
     this.perimeter = this.circle.getAttribute('r') * 2 * Math.PI;
+    this.circle.setAttribute('stroke-dasharray', this.perimeter);
     // if (callbacks) {
     //   this.onStart = callbacks.onStart;
     //   this.onTick = callbacks.onTick;
@@ -28,18 +27,17 @@ class Timer {
     // this.startButton.addEventListener('click', this.start);
   }
   events() {
-    this.circle.setAttribute('stroke-dasharray', this.perimeter);
-
     this.startButton.addEventListener('click', this.start);
     this.pauseButton.addEventListener('click', this.pause);
+    // this.pauseButton.addEventListener('click', this.stop);
   }
   start = () => {
     // if (this.onStart) {
     //   this.onStart(this.timeRemaining);
     // }
     this.duration = this.timeRemaining;
-    this.tick();
     this.interval = setInterval(this.tick, 50);
+    this.tick();
   };
   pause = () => {
     clearInterval(this.interval);
@@ -51,10 +49,9 @@ class Timer {
       //   this.onComplete();
       // }
     }
-    this.circle.setAttribute(
-      'stroke-dashoffset',
-      (this.perimeter * this.timeRemaining) / this.duration - this.perimeter
-    );
+    const durationCalc =
+      (this.perimeter * this.timeRemaining) / this.duration - this.perimeter;
+    this.circle.setAttribute('stroke-dashoffset', durationCalc);
     this.timeRemaining = parseFloat(this.durationInput.value);
     this.timeRemaining -= 0.05;
     this.durationInput.value = this.timeRemaining.toFixed(2);
@@ -70,5 +67,9 @@ class Timer {
   //   this.durationInput.value =time
   // }
 }
+const durationInput = document.querySelector('#duration-timer');
+const startButton = document.querySelector('#start-timer');
+const pauseButton = document.querySelector('#pause-timer');
+const stopButton = document.querySelector('#stop-timer');
 
-const timer = new Timer(durationInput, startButton, pauseButton);
+const timer = new Timer(durationInput, startButton, pauseButton, stopButton);

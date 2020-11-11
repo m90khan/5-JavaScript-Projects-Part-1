@@ -4,6 +4,7 @@ import '../scripts/modules/movieSeat';
 import '../scripts/modules/timer';
 import '../scripts/modules/formValidator';
 import '../scripts/modules/github/githubApp';
+import '../scripts/modules/movieSearch/movieSearch';
 
 import 'lazysizes';
 // import Navigation from "../scripts/modules/navigation";

@@ -1,24 +1,20 @@
-@import "./abstracts/mixins";
-@import "./abstracts/functions";
-@import "./abstracts/variables";
-@import "./base/base";
-@import "./base/animations";
-@import "./base/utilities";
-@import "./base/typography";
-@import "./components/button";
-@import "./components/form";
-@import "./components/movieSeat";
-@import "./components/github";
-@import "./components/timer";
+@import './abstracts/mixins';
+@import './abstracts/functions';
+@import './abstracts/variables';
+@import './base/base';
+@import './base/animations';
+@import './base/utilities';
+@import './base/typography';
+@import './components/button';
+@import './components/form';
+@import './components/movieSeat';
+@import './components/github';
+@import './components/timer';
+@import './components/movieSearch';
 
- 
-@import "./layout/header";
-@import "./layout/scrollbar";
+@import './layout/header';
+@import './layout/scrollbar';
 
- @import "./layout/footer";
-@import "./layout/navigation";
-@import "./pages/home";
-
-
- 
-  
+@import './layout/footer';
+@import './layout/navigation';
+@import './pages/home';

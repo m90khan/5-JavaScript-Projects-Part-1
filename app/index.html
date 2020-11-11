@@ -12,6 +12,10 @@
       name="keywords"
       content="Travel planning, travel bundles, travel escapes, affordable travel"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+    />
     <meta
       name="description"
       content="Stressed? No Problem. You relief is One trip away. We create soul restoring journeys that inspire you to be you."
@@ -238,11 +242,11 @@
         <h1 class="u-tc">Timer Animated Clock</h1>
         <div class="timer-set">
           <div class="controls">
-            <input id="duration-timer" value="3" />
+            <input id="duration-timer" value="10" />
             <div>
               <button id="start-timer"><i class="fas fa-play"></i></button>
               <button id="pause-timer"><i class="fas fa-pause"></i></button>
-              <button id="pause-timer"><i class="fas fa-stop"></i></button>
+              <button id="stop-timer"><i class="fas fa-stop"></i></button>
             </div>
           </div>
           <svg class="dial">
@@ -256,6 +260,30 @@
               transform="rotate(-90 100 100)"
             />
           </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Movie Search -->
+    <div class="section-search">
+      <div class="search">
+        <h1 class="u-tc">Movie Search</h1>
+        <div class="container">
+          <div class="column is-half notification is-primary tutorial">
+            <h1 class="title">Search For a Movie on Both Sides</h1>
+            <p class="subtitle">We will tell you which is best!</p>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <div id="left-autocomplete"></div>
+              <div id="left-summary"></div>
+            </div>
+
+            <div class="column">
+              <div id="right-autocomplete"></div>
+              <div id="right-summary"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
