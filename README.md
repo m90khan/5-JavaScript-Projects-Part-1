@@ -30,7 +30,7 @@ JavaScript Projects <br />
 
 ### About the Project
 
-- Combination of 5 different projects to practice javaScript
+- Combination of five different projects to practice javaScript.
 
 Live: https://github.com/m90khan/5-JavaScript-Projects-Part-1/
 Layout: Flexbox (BEM Model)
