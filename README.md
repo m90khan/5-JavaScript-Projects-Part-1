@@ -24,7 +24,7 @@ JavaScript Projects <br />
 - [Projects](#projects)
 - [Skills](#skills)
 - [Code Snipet](#code)
-- [Contact](#Contact)
+- [Connect with me](#Contact)
 
 ---
 
